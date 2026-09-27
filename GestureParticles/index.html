@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Particles · Phase 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="scene-shell">
+      <div id="scene" aria-label="动态 3D 粒子球"></div>
+      <div class="hud" aria-hidden="true">
+        <p class="eyebrow">GESTURE PARTICLES</p>
+        <h1>Particle<br /><span>Core</span></h1>
+        <p class="hint">MOVE CURSOR TO EXPLORE</p>
+      </div>
+      <div class="corner corner-top"></div>
+      <div class="corner corner-bottom"></div>
+      <section class="camera-panel" aria-label="手部识别摄像头预览">
+        <div class="camera-title"><span class="camera-indicator"></span> HAND TRACKING</div>
+        <div class="camera-view">
+          <video id="camera" autoplay playsinline muted></video>
+          <canvas id="hand-overlay"></canvas>
+        </div>
+        <p id="tracking-status" class="tracking-status" role="status">正在启动摄像头</p>
+        <p id="gesture-status" class="gesture-status" role="status">手势：等待识别</p>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
