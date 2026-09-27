@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人主页" />
+    <title>浅忆 · 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="nav wrap">
+      <a class="brand" href="#top">QY<span>·</span></a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#work">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="status" href="mailto:hello@example.com"><i></i> 可合作</a>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <p class="eyebrow">01 — DIGITAL MAKER / SHANGHAI</p>
+        <h1>你好，我是<br /><em>浅忆。</em></h1>
+        <div class="hero-bottom">
+          <p>独立设计师与创意开发者。<br />我为有想法的人，做有温度的数字体验。</p>
+          <a class="round-link" href="#work" aria-label="查看作品">↓</a>
+        </div>
+      </section>
+
+      <section class="about wrap" id="about">
+        <p class="section-number">02 / ABOUT</p>
+        <div class="about-copy">
+          <h2>把复杂的事，<br />做得<em>简单而动人。</em></h2>
+          <p>我相信好的设计不该大声喧哗，而应在每次点击、每段留白中自然发生。近五年来，我专注于品牌、网页与产品体验，和团队一起把模糊的想法变成清晰的作品。</p>
+        </div>
+        <div class="tags"><span>BRANDING</span><span>WEB DESIGN</span><span>CREATIVE DEV</span><span>ART DIRECTION</span></div>
+      </section>
+
+      <section class="work wrap" id="work">
+        <div class="section-heading"><p class="section-number">03 / SELECTED WORK</p><a href="mailto:hello@example.com">更多作品 ↗</a></div>
+        <div class="project-grid">
+          <a class="project project-snake" href="snake.html" aria-label="打开贪吃蛇小游戏"><div class="project-art art-snake"><span class="snake-pixel pixel-one"></span><span class="snake-pixel pixel-two"></span><span class="snake-pixel pixel-three"></span><span class="snake-pixel pixel-four"></span><span class="snake-food"></span><strong>SNAKE<br />GAME</strong></div><div class="project-meta"><h3>贪吃蛇小游戏 <span>↗</span></h3><p>创意开发 · 2026</p></div></a>
+          <article class="project project-solar">
+            <a class="solar-cover" href="solar.html" aria-label="打开 Solar Explorer 3D 太阳系">
+              <div class="project-art art-solar" aria-hidden="true">
+                <span class="solar-sun"></span>
+                <span class="solar-orbit solar-orbit-one"><i></i></span>
+                <span class="solar-orbit solar-orbit-two"><i></i></span>
+                <span class="solar-orbit solar-orbit-three"><i></i></span>
+                <small>INTERACTIVE · THREE.JS</small>
+                <strong>SOLAR<br />EXPLORER</strong>
+              </div>
+            </a>
+            <div class="solar-details">
+              <div><h3>Solar Explorer</h3><p>Interactive 3D Solar System</p></div>
+              <a class="project-cta" href="solar.html">Explore <span>→</span></a>
+            </div>
+          </article>
+          <article class="project project-gesture">
+            <div class="project-art art-gesture" aria-hidden="true">
+              <span class="gesture-orbit orbit-one"></span>
+              <span class="gesture-orbit orbit-two"></span>
+              <span class="gesture-orbit orbit-three"></span>
+              <span class="gesture-core"></span>
+              <strong>GESTURE<br />PARTICLES</strong>
+              <small>THREE.JS × MEDIAPIPE</small>
+            </div>
+            <div class="gesture-details">
+              <div>
+                <h3>Gesture Particles</h3>
+                <p>基于 Three.js 和 MediaPipe 制作的 3D 手势交互粒子系统，可以通过摄像头识别手势并实时控制粒子效果。</p>
+              </div>
+              <a class="project-cta" href="https://cgao5160-dev.github.io/gesture-particles/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页在线体验 Gesture Particles">在线体验 <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact wrap" id="contact">
+        <p class="section-number">04 / CONTACT</p>
+        <h2>有个好想法？<br /><a href="mailto:hello@example.com">聊聊吧。<span>↗</span></a></h2>
+        <div class="socials"><a href="mailto:hello@example.com">EMAIL</a><a href="#top">INSTAGRAM</a><a href="#top">LINKEDIN</a></div>
+      </section>
+    </main>
+    <footer class="wrap"><span>© 2026 QIAN YI</span><span>MADE WITH INTENTION</span></footer>
+  </body>
+</html>

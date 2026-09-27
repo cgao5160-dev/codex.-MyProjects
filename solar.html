@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Solar Explorer — 交互式 3D 太阳系" />
+    <meta name="theme-color" content="#02060d" />
+    <title>Solar Explorer · 3D 太阳系</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="solar.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main id="space" aria-label="交互式 3D 太阳系">
+      <div class="loading" id="loading" role="status">
+        <span></span>
+        <p>正在进入太阳系</p>
+      </div>
+
+      <header class="topbar glass">
+        <a class="back-link" href="index.html" aria-label="返回个人主页">← PORTFOLIO</a>
+        <div class="title-block">
+          <p>INTERACTIVE 3D EXPERIENCE</p>
+          <h1>Solar Explorer</h1>
+          <span>Explore Our Solar System</span>
+        </div>
+        <button class="overview-button" id="overview" type="button">太阳系全景</button>
+      </header>
+
+      <aside class="info-panel glass" id="info-panel" aria-live="polite">
+        <button class="close-info" id="close-info" type="button" aria-label="关闭行星信息">×</button>
+        <p class="info-kicker" id="info-type">恒星</p>
+        <h2 id="info-name">太阳</h2>
+        <p class="info-en" id="info-en">SUN</p>
+        <dl>
+          <div><dt>距太阳</dt><dd id="info-distance">太阳系中心</dd></div>
+          <div><dt>公转周期</dt><dd id="info-orbit">—</dd></div>
+          <div><dt>自转周期</dt><dd id="info-rotation">约 25–35 天</dd></div>
+          <div><dt>卫星</dt><dd id="info-moons">—</dd></div>
+        </dl>
+        <p class="info-description" id="info-description">太阳是太阳系中心的恒星，其引力维系着所有行星的运行。</p>
+      </aside>
+
+      <div class="hint glass" id="hint">拖动旋转 · 滚轮缩放 · 点击天体</div>
+
+      <nav class="planet-nav glass" aria-label="天体导航">
+        <button type="button" data-body="sun">太阳</button>
+        <button type="button" data-body="mercury">水星</button>
+        <button type="button" data-body="venus">金星</button>
+        <button type="button" data-body="earth">地球</button>
+        <button type="button" data-body="mars">火星</button>
+        <button type="button" data-body="jupiter">木星</button>
+        <button type="button" data-body="saturn">土星</button>
+        <button type="button" data-body="uranus">天王星</button>
+        <button type="button" data-body="neptune">海王星</button>
+        <button type="button" data-body="pluto">冥王星</button>
+      </nav>
+
+      <section class="time-controls glass" aria-label="时间控制">
+        <button class="play-button" id="play-toggle" type="button" aria-label="暂停动画">Ⅱ</button>
+        <span>TIME</span>
+        <div class="speed-buttons" role="group" aria-label="公转速度">
+          <button class="active" type="button" data-speed="1">1×</button>
+          <button type="button" data-speed="10">10×</button>
+          <button type="button" data-speed="100">100×</button>
+        </div>
+      </section>
+
+      <noscript>此体验需要启用 JavaScript。</noscript>
+    </main>
+    <script type="module" src="solar.js"></script>
+  </body>
+</html>
