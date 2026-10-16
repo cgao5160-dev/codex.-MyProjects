@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="art" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+    <title id="title">鹈鹕骑自行车的二维动画</title><desc id="desc">戴着绿色小帽、系着橙色围巾的白色鹈鹕，在海岸边骑着橙色自行车。车轮和脚踏连续转动，云朵和路旁植物向后移动。</desc>
+    <defs>
+      <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#edf1df"/><stop offset="1" stop-color="#dce9df"/></linearGradient>
+      <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#a8cec2"/><stop offset="1" stop-color="#c9ddd0"/></linearGradient>
+      <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1" cy="2" r=".55" fill="#456d59" opacity=".08"/></pattern>
+      <g id="cloud" fill="#fffdf3"><path d="M-60 0 Q-70-20-45-23 Q-37-53-10-36 Q12-61 29-34 Q56-40 61-17 Q88-12 74 0Z"/></g>
+      <g id="wheel" stroke="#294e4c"><circle r="79" stroke-width="12" fill="#e9eee0"/><circle r="69" stroke="#fcf8e9" stroke-width="3" fill="none"/><g stroke="#829c8c" stroke-width="1.5"><path d="M-68 0H68M0-68V68M-48-48L48 48M-48 48L48-48M-63-26L63 26M-26-63L26 63M-63 26L63-26M-26 63L26-63"/></g><circle r="8" fill="#f1e8ce" stroke-width="3"/><path d="M35-59l8 5" stroke="#e8ac62" stroke-width="5" stroke-linecap="round"/></g>
+      <g id="grass" fill="none" stroke="#6d927a" stroke-width="3" stroke-linecap="round"><path d="M0 0Q-2-16-12-24M0 0Q0-24 8-33M0 0Q10-16 18-17"/></g>
+    </defs>
+    <path fill="url(#sky)" d="M0 0H1000V600H0z"/>
+    <circle cx="793" cy="114" r="47" fill="#e9b66e"/><circle cx="793" cy="114" r="62" fill="none" stroke="#e9b66e" opacity=".2"/>
+    <g id="clouds"><use href="#cloud" x="155" y="108" opacity=".85"/><use href="#cloud" x="558" y="74" opacity=".65"/><use href="#cloud" x="960" y="166" opacity=".8"/></g>
+    <path d="M0 296Q120 240 238 283T472 280Q560 245 650 279T1000 269V370H0Z" fill="#bacfba"/>
+    <path d="M0 320Q145 293 310 316T620 308T1000 316V426H0Z" fill="url(#sea)"/>
+    <g stroke="#eff2dd" stroke-width="3" stroke-linecap="round" opacity=".7"><path d="M40 348H126M175 374H279M712 350H790M849 389H958M580 387H631M350 343H400"/></g>
+    <path d="M0 411Q230 386 437 410T1000 402V600H0Z" fill="#e5dfbb"/>
+    <path d="M0 460Q480 443 1000 460V600H0Z" fill="#ede8d5"/>
+    <path d="M0 462Q480 445 1000 462" fill="none" stroke="#c9c9aa" stroke-width="2"/>
+    <g id="road" stroke="#c9c3a6" stroke-width="4" stroke-linecap="round"><path d="M0 530h75m100 0h75m100 0h75m100 0h75m100 0h75m100 0h75m100 0h75"/></g>
+    <g id="plants"><use href="#grass" x="85" y="453"/><use href="#grass" x="845" y="448"/><use href="#grass" x="1020" y="459"/></g>
+    <ellipse cx="500" cy="499" rx="207" ry="13" fill="#687663" opacity=".13"/>
+    <g id="rider">
+      <g transform="translate(354 413)"><g class="spin"><use href="#wheel"/></g></g>
+      <g transform="translate(645 413)"><g class="spin"><use href="#wheel"/></g></g>
+      <!-- Far leg passes behind the bicycle frame. -->
+      <path id="farLeg" d="M438 286L472 358L457 413" fill="none" stroke="#c08b49" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="farFoot" d="M449 409L472 410L481 420H449Z" fill="#d99e4a" stroke="#b77e3b" stroke-width="2"/>
+      <g fill="none" stroke="#d77548" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"><path d="M354 413L422 301L486 413H354L575 301L645 413M486 413L575 301M422 301H575"/><path d="M422 301L410 277M575 301L566 263"/></g>
+      <path d="M566 263L587 246L613 247" fill="none" stroke="#335957" stroke-width="7" stroke-linecap="round"/><path d="M603 247h17" stroke="#9a6748" stroke-width="9" stroke-linecap="round"/>
+      <path d="M388 277Q410 269 437 277" stroke="#31504a" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M354 413L486 413" stroke="#718575" stroke-width="3"/>
+      <circle cx="486" cy="413" r="19" fill="#e8bd77" stroke="#345754" stroke-width="4"/>
+      <g id="crank" transform="translate(486 413)" stroke="#315653" stroke-width="5" stroke-linecap="round"><path d="M-29 0H29"/><path d="M-37 0h16M21 0h16" stroke-width="7"/></g>
+      <g id="bird">
+        <!-- Tail, body, curled neck and distinctive long pelican bill. -->
+        <path d="M379 263L330 226L348 278L393 290" fill="#e5e6d5" stroke="#3e6057" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M365 242C379 211 423 201 462 221C496 237 514 261 499 282C486 303 411 309 381 285C367 275 360 260 365 242Z" fill="#fffcef" stroke="#3e6057" stroke-width="3"/>
+        <path d="M461 246C496 238 504 212 501 182C497 159 493 135 506 121C519 106 547 113 550 132C555 157 529 170 534 194C541 222 531 259 499 276" fill="#fffcef" stroke="#3e6057" stroke-width="3"/>
+        <path d="M542 140L680 158Q633 192 551 174L537 160Z" fill="#eab65f" stroke="#966b3e" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M547 140L682 157L548 157" fill="#edaa4b" stroke="#966b3e" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M561 166Q610 181 652 164" fill="none" stroke="#f6d58e" stroke-width="3"/>
+        <circle cx="535" cy="132" r="4.5" fill="#264b47"/><circle cx="536" cy="130.5" r="1.3" fill="white"/>
+        <path d="M516 147q6 4 11 0" fill="none" stroke="#dcc6a1" stroke-width="3" stroke-linecap="round"/>
+        <path d="M497 119Q495 92 518 94Q538 94 541 116" fill="#3d7667" stroke="#315b52" stroke-width="2.5"/>
+        <path d="M491 119Q519 109 553 120" fill="none" stroke="#315b52" stroke-width="7" stroke-linecap="round"/>
+        <path id="scarfTail" d="M509 195Q475 180 442 195L449 208Q476 192 507 206" fill="#d87449"/>
+        <path d="M503 187L536 191L534 203L506 200Z" fill="#e58b54" stroke="#c87043" stroke-width="2"/>
+        <path d="M399 238Q429 223 458 249Q483 266 502 248L584 245" fill="none" stroke="#547367" stroke-width="19" stroke-linecap="round"/>
+        <path d="M398 234Q429 220 459 245Q482 261 499 245L581 242" fill="none" stroke="#eeeede" stroke-width="15" stroke-linecap="round"/>
+        <path d="M393 258Q414 277 448 267" fill="none" stroke="#ccd4bf" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <path id="nearLeg" d="M438 286L522 340L515 413" fill="none" stroke="#dba34e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="nearFoot" d="M507 409L530 410L539 420H507Z" fill="#efb65a" stroke="#b6843f" stroke-width="2"/>
+    </g>
+    <g fill="none" stroke="#6d8d79" stroke-width="2.5" stroke-linecap="round" opacity=".55"><path d="M262 223h35m-53 17h39m-14 17h20"/></g>
+    <path fill="url(#grain)" pointer-events="none" d="M0 0H1000V600H0z"/>
+    <text x="35" y="570" font-family="system-ui,sans-serif" font-size="10" letter-spacing="3" fill="#89947c">TAKE THE SCENIC ROUTE</text>
+  </svg>
